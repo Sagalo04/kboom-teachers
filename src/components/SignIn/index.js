@@ -23,11 +23,11 @@ const SignInPage = () => (
   </div>
 );
 
-const INITIAL_STATE = {
+/*const INITIAL_STATE = {
   email: '',
   password: '',
   error: null,
-};
+};*/
 
 const ERROR_CODE_ACCOUNT_EXISTS =
   'auth/account-exists-with-different-credential';
