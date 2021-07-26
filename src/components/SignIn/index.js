@@ -13,10 +13,9 @@ const SignInPage = () => (
 
     </div>
     <div className={styles.o_signin_main}> 
-
-      <img src="../../logo.png" alt=""/>
+      <img src='../../Logo.svg' alt="" />
       <h1>PORTAL DOCENTES</h1>
-      <p>Inicia Sesión con tu cuenta UA</p>
+      <p>Inicia Sesión con tu cuenta UAO</p>
       <SignInGoogle />
       <PasswordForgetLink />
       <SignUpLink />
