@@ -2,18 +2,24 @@ import React from 'react';
 import { compose } from 'recompose';
 
 import { withAuthorization, withEmailVerification } from '../Session';
-import Messages from '../Messages';
+
+import styles from './home.module.css';
+import Card from '../Card/Card';
 
 const HomePage = () => (
-  <div>
-    <h1>Home Page</h1>
-    <p>The Home Page is accessible by every signed in user.</p>
-
-    <Messages />
+  <div className={styles.o_home}>
+    <div className={styles.o_card_container}>
+      <Card nombre={'Santiago García López'} etapa={4} />
+      <Card nombre={'Laura Garces'} etapa={2} />
+      <Card nombre={'Santiago García López'} etapa={3} />
+      <Card nombre={'Laura Garces'} etapa={2} />
+      <Card nombre={'Santiago García López'} etapa={4} />
+      <Card nombre={'Laura Garces'} etapa={2} />
+    </div>
   </div>
 );
 
-const condition = authUser => !!authUser;
+const condition = (authUser) => !!authUser;
 
 export default compose(
   withEmailVerification,
