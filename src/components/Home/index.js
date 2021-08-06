@@ -9,7 +9,7 @@ import Card from '../Card/Card';
 const HomePage = () => (
   <div className={styles.o_home}>
     <div className={styles.o_card_container}>
-      <Card nombre={'Santiago García López'} etapa={4} />
+      <Card nombre={'Santiago García López'} etapa={5} />
       <Card nombre={'Laura Garces'} etapa={2} />
       <Card nombre={'Santiago García López'} etapa={3} />
       <Card nombre={'Laura Garces'} etapa={2} />

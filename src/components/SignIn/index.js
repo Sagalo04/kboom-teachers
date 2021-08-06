@@ -8,16 +8,25 @@ import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
 
 const SignInPage = () => (
+  // <div className={styles.o_signin_container}>
+  // <div className={styles.o_signin_image}>
+  //   <img
+  //     // src="../../background-main.png"
+  //     alt=""
+  //     width="100%"
+  //     height="100%"
+  //   />
+  // </div>
   <div className={styles.o_signin_container}>
-    <div className={styles.o_signin_image}></div>{' '}
     <div className={styles.o_signin_main}>
       <img src="../../Logo.svg" alt="" />
       <h1> PORTAL DOCENTES </h1>{' '}
       <p> Inicia Sesión con tu cuenta UAO </p> <SignInGoogle />
-      {/* <PasswordForgetLink />
-      <SignUpLink /> */}
     </div>
+    {/* <PasswordForgetLink />
+      <SignUpLink /> */}
   </div>
+  // </div>
 );
 
 /*const INITIAL_STATE = {
